@@ -24,7 +24,7 @@ On 10,000 generated molecules:
 
 ___
 
-## UI
+## App
 
 You can launch a streamlit app to interact with the model, after installing the requirements, with the following command:
 ```
