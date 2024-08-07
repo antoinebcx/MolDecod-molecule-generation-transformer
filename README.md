@@ -31,6 +31,8 @@ You can launch a streamlit app to interact with the model, after installing the 
 streamlit run streamlit.py
 ```
 
+##
+
 <img width="497" alt="image" src="https://github.com/user-attachments/assets/f67e9bcc-e26c-439b-a1a3-27fdd616f53e">
 
 <img width="384" alt="image" src="https://github.com/user-attachments/assets/facafc0d-d4e3-4c65-83d9-04b5d51fd9c7">
