@@ -1,8 +1,8 @@
 # MolDecod: Decoder-only transformer for molecule generation
 
 This repository contains:
-- MolDecod, a small transformer for SMILES molecule generation
-- its tokenizer, a SentencePiece model with a vocab size of 1000
+- MolDecod, a small transformer model for SMILES molecule generation
+- its tokenizer, a SentencePiece model
 - utils functions and a streamlit app to interact with the model
 - notebooks to train and use the model
 
