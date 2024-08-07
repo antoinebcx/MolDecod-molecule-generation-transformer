@@ -7,7 +7,7 @@ This repository contains:
 
 MolDecod is a 5M-parameter decoder-only transformer (GPT-like) using rotary positional encoding.
 
-It was trained on ~2.7M molecules (~90M tokens), from the high-quality MOSES and ChEMBL datasets (more information [here](https://tdcommons.ai/generation_tasks/molgen/)).
+It was trained on ~2.7M molecules (~90M tokens), from the high-quality MOSES and ChEMBL datasets. More information on those two datasets [here](https://tdcommons.ai/generation_tasks/molgen/).
 
 MolDecod achieves an impressive performance for its size.
 On 10,000 generated molecules:
