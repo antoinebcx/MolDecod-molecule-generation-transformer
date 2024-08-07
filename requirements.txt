@@ -1,0 +1,9 @@
+torch
+torchvision
+torchaudio
+scikit-learn
+sentencepiece
+rdkit-pypi
+# PyTDC
+streamlit
+IPython
