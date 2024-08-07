@@ -16,7 +16,7 @@ It was trained on ~2.7M molecules (~90M tokens), from the high-quality MOSES and
 More information on the datasets [here](https://tdcommons.ai/generation_tasks/molgen/).
 
 MolDecod achieves an impressive performance for its size.
-On 10,000 generated molecules:
+On 10,000 generated molecules with temperature 0.7:
 - Validity: 0.95
 - Uniqueness: 0.95
 - Diversity: 0.87
