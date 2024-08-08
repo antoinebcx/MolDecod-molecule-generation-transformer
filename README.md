@@ -16,6 +16,18 @@ This repository contains:
 
 ___
 
+## Model characteristics
+
+MolDecod is a decoder-only transformer (GPT-like), using rotary positional encoding. It has a model dimension of 256, 4 attention heads and 4 encoding layers, resulting with the buffers in a total of 5 million parameters.
+
+On 10,000 generated molecules (with temperature 0.7), it obtains the following metrics:
+- Validity: 0.95
+- Uniqueness: 0.95
+- Diversity: 0.87
+- Novelty: 0.93
+
+___
+
 ## App
 
 You can launch a streamlit app to interact with the model. Download the repo, open a terminal window, install the requirements and run the following command:
@@ -30,15 +42,3 @@ You can generate molecules as well as visualize their structure and molecular pr
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/8b6fec5b-fef4-4475-8358-8475dee558f1">
 
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/bf5f396f-7618-4d56-aac1-56f444a8ef9a">
-
-___
-
-## Model characteristics
-
-MolDecod is a decoder-only transformer (GPT-like), using rotary positional encoding. It has a model dimension of 256, 4 attention heads and 4 encoding layers, resulting with the buffers in a total of 5 million parameters.
-
-On 10,000 generated molecules (with temperature 0.7), it obtains the following metrics:
-- Validity: 0.95
-- Uniqueness: 0.95
-- Diversity: 0.87
-- Novelty: 0.93
