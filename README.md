@@ -25,6 +25,8 @@ streamlit run streamlit.py
 
 You can generate molecules as well as visualize their structure and molecular properties.
 
+####
+
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/8b6fec5b-fef4-4475-8358-8475dee558f1">
 
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/bf5f396f-7618-4d56-aac1-56f444a8ef9a">
