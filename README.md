@@ -31,8 +31,8 @@ You can launch a streamlit app to interact with the model, after installing the 
 streamlit run streamlit.py
 ```
 
+You can generate molecules, choosing the start tokens, maximum sequence length and model temperature, as well as visualize their structure and molecular properties.
 
-<img width="429" alt="image" src="https://github.com/user-attachments/assets/1cb03cde-b2e8-4fb4-a33f-98954584919e">
+<img width="742" alt="image" src="https://github.com/user-attachments/assets/8b6fec5b-fef4-4475-8358-8475dee558f1">
 
-
-<img width="384" alt="image" src="https://github.com/user-attachments/assets/facafc0d-d4e3-4c65-83d9-04b5d51fd9c7">
+<img width="742" alt="image" src="https://github.com/user-attachments/assets/bf5f396f-7618-4d56-aac1-56f444a8ef9a">
