@@ -12,7 +12,6 @@ def calculate_properties(smiles):
         "Number of H-Bond Donors": Descriptors.NumHDonors(mol),
         "Number of H-Bond Acceptors": Descriptors.NumHAcceptors(mol),
         "Bertz Complexity Index": round(Descriptors.BertzCT(mol), 2),
-        "Molecular Complexity Score": round(Descriptors.MolComplexity(mol), 2),
         "Hall-Kier Alpha Value": round(Descriptors.HallKierAlpha(mol), 4),
         "Kappa1 Shape Index": round(Descriptors.Kappa1(mol), 4),
         "Kappa2 Shape Index": round(Descriptors.Kappa2(mol), 4),
@@ -24,7 +23,6 @@ def calculate_properties(smiles):
         "Topological Polar Surface Area": round(Descriptors.TPSA(mol), 2),
         "Approximate Surface Area": round(Descriptors.LabuteASA(mol), 2),
         "Number of Rotatable Bonds": Descriptors.NumRotatableBonds(mol),
-        "Quantitative Estimate of Drug-likeness": round(Descriptors.QED(mol), 4),
         "Number of Saturated Rings": Descriptors.NumSaturatedRings(mol),
         "Number of Aromatic Rings": Descriptors.NumAromaticRings(mol)
     }
