@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -54,6 +55,7 @@ if st.button('Generate Molecule'):
     st.markdown('###')
     
     # Create a placeholder
+    st.write('Generated Molecule:')
     output_placeholder = st.empty()
     
     with st.spinner('Generating...'):
@@ -70,8 +72,9 @@ if st.button('Generate Molecule'):
     # Calculate properties
     properties = calculate_properties(generated_molecule)
     if properties:
-        # st.write('Molecular Properties:')
-        for prop, value in properties.items():
-            st.write(f"{prop}: {value}")
+        st.write('Molecular Properties:')
+        property_data = [[prop, value] for prop, value in properties.items()]
+        property_df = pd.DataFrame(property_data, columns=['Property', 'Value'])
+        st.table(property_df)
     else:
         st.write("Invalid molecule")
