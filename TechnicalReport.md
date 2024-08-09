@@ -134,13 +134,13 @@ During the training phase, a causal mask is applied to maintain autoregressive s
 ### Metrics
 
 We 10,000 generate molecules for different temperature levels and evaluate the model on the following metrics:
-- Validity: This measures the proportion of generated molecules that are chemically valid.
-- Uniqueness: The proportion of unique molecules among the valid ones.
-- Diversity: A measure of structural diversity among the generated molecules.
-- Novelty: The proportion of generated molecules not present in the training set.
-- KL Divergence: Measures how much the distribution of generated molecules differs from the training set.
-- Fragment Similarity: Similarity of generated molecules to the training set based on molecular fragments.
-- Scaffold Diversity: Measures the diversity of molecular scaffolds in the generated set.
+- **Validity**: This measures the proportion of generated molecules that are chemically valid.
+- **Uniqueness**: The proportion of unique molecules among the valid ones.
+- **Diversity**: A measure of structural diversity among the generated molecules.
+- **Novelty**: The proportion of generated molecules not present in the training set.
+- **KL Divergence**: Measures how much the distribution of generated molecules differs from the training set.
+- **Fragment Similarity**: Similarity of generated molecules to the training set based on molecular fragments.
+- **Scaffold Diversity**: Measures the diversity of molecular scaffolds in the generated set.
 
 ### Results
 
