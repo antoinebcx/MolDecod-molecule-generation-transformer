@@ -4,8 +4,6 @@ MolDecod is a 5M-parameter decoder-only transformer using rotary positional enco
 
 It was trained on ~2.7M molecules (~90M tokens), from the high-quality MOSES and ChEMBL datasets [[+]](https://tdcommons.ai/generation_tasks/molgen/), and achieves an impressive performance for its size.
 
-___
-
 ## Repository
 
 This repository contains:
@@ -13,12 +11,11 @@ This repository contains:
 - A `streamlit.py` app to interact with the model
 - Utils functions in `/utils`
 - Notebooks to train, evaluate and use the model in `/notebooks`
-
-___
+- `TechnicalReport.md`, for technical details
 
 ## Model characteristics
 
-MolDecod is a decoder-only transformer (GPT-like), using rotary positional encoding. It has a model dimension of 256, 4 attention heads and 4 encoding layers, resulting with the buffers in a total of 5 million parameters.
+MolDecod is a decoder-only transformer model (GPT-like) using rotary positional encoding, with a model dimension of 256, 4 attention heads, and 4 decoder layers. This results in ~5 million parameters, with ~4 million of them being trainable.
 
 On 10,000 generated molecule, it obtains the following metrics:
 | Temperature | Validity | Uniqueness | Diversity | Novelty | KL Divergence | Fragment Similarity | Scaffold Diversity |
@@ -29,7 +26,7 @@ On 10,000 generated molecule, it obtains the following metrics:
 | 0.7         | 0.96     | 0.95       | 0.87      | 0.9240  | 5.6936        | 0.0778              | 0.6540             |
 | 0.9         | 0.88     | 0.88       | 0.88      | 0.9562  | 5.3179        | 0.0502              | 0.7524             |
 
-___
+See `TechnicalReport.md` for more details and explanations.
 
 ## App
 
