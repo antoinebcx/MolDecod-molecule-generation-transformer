@@ -38,15 +38,15 @@ model = model.to(device)
 optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 
 # Streamlit app
-st.title('MolDecod - Molecule generation transformer')
-st.markdown('Generate molecules with transformer model')
+st.title('MolDecod - Molecule generation')
+st.markdown('Generate molecules with a decoder-only transformer model')
 
 st.markdown('###')
 
 # User inputs
 start_tokens = st.text_input('Start tokens (e.g., C, CCN)', value='C')
 max_length = st.slider('Max length', min_value=10, max_value=1000, value=150)
-temperature = st.slider('Temperature', min_value=0.01, max_value=1.2, value=0.7, step=0.1)
+temperature = st.slider('Temperature', min_value=0.01, max_value=1.0, value=0.5, step=0.1)
 
 if st.button('Generate Molecule'):
     start_seq = [sp.piece_to_id('<SOS>')] + sp.encode(start_tokens)
