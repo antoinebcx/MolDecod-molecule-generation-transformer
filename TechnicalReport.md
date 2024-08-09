@@ -8,18 +8,24 @@ This report details MolDecod's architecture, training, and evaluation, demonstra
 
 ## Data
 
-We train the model on a combination of two datasets for molecule generation (downloaded from [TDCommons](https://tdcommons.ai/generation_tasks/molgen/)):
+We train the model on a combination of two datasets for molecule generation:
 - MOSES, a benchmark platform for distribution learning based molecule generation, processed from the ZINC Clean Leads dataset, containing ~ 2 million molecules.
 - ChEMBL, a manually curated database of bioactive molecules with drug-like properties, containing ~ 2 million molecules.
 
 The random split results in 2.7 million molecules in the training set (70%), and ~600k molecules in both the validation and test sets (15% each).
 
+The data was downloaded using the [TDCommons library](https://tdcommons.ai/generation_tasks/molgen/).
+
 ## Tokenizer
+
+📖 [SentencePiece](https://github.com/google/sentencepiece), [tokenizer.py](https://github.com/tonito9/MolDecod-molecule-generation-transformer/blob/main/utils/tokenizer.py) & [training notebook](https://github.com/tonito9/MolDecod-molecule-generation-transformer/blob/main/notebooks/eval_moldecod.ipynb)
 
 This project uses a custom SentencePiece tokenizer to process SMILES strings for molecular representation learning. The tokenizer is trained with a 1,000-token vocabulary, including special tokens (< SOS >, < EOS >, < PAD >). It converts SMILES into subword units, ensuring robust encoding of molecular structures.
 
 
 ## Architecture
+
+📖 [model.py](https://github.com/tonito9/MolDecod-molecule-generation-transformer/blob/main/utils/model.py)
 
 ### Key features
 
@@ -114,12 +120,16 @@ The model uses GELU activation functions and employs a dropout rate of 0.25 for 
 
 ## Training
 
+📖 [training notebook](https://github.com/tonito9/MolDecod-molecule-generation-transformer/blob/main/notebooks/eval_moldecod.ipynb)
+
 The model is optimized using the AdamW optimizer with a learning rate of 1e-4 and gradient clipping set at 1.0 to prevent gradient explosion. Training occurs over 8 epochs with a batch size of 64. CrossEntropyLoss is used to assess the difference between predicted and actual token sequences, while the OneCycleLR scheduler dynamically adjusts the learning rate, peaking early and then gradually decreasing throughout training.
 
 During the training phase, a causal mask is applied to maintain autoregressive sequence generation, and gradients are clipped to ensure stability. After each epoch, the model is evaluated on a validation set to monitor performance. The model with the lowest validation loss is saved as the best model. This process ensures the model is well-regularized, efficiently trained, and robust for molecular representation tasks.
 
 
 ## Evaluation
+
+📖 [evaluation notebook](https://github.com/tonito9/MolDecod-molecule-generation-transformer/blob/main/notebooks/eval_moldecod.ipynb)
 
 ### Metrics
 
