@@ -43,6 +43,7 @@ class DecoderOnlyTransformer(nn.Module):
         output = self.fc_out(output)
         return self.dropout(output)
 
+
 def create_mask(size):
     mask = torch.triu(torch.ones(size, size) * float('-inf'), diagonal=1)
     return mask
