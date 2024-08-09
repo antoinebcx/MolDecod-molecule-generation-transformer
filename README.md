@@ -26,7 +26,7 @@ On 10,000 generated molecule, it obtains the following metrics:
 | 0.7         | 0.96     | 0.95       | 0.87      | 0.9240  | 5.6936        | 0.0778              | 0.6540             |
 | 0.9         | 0.88     | 0.88       | 0.88      | 0.9562  | 5.3179        | 0.0502              | 0.7524             |
 
-See `TechnicalReport.md` for more details and explanations.
+See `TechnicalReport.md` [[+]](https://github.com/tonito9/MolDecod-molecule-generation-transformer/blob/main/TechnicalReport.md) for more details and explanations.
 
 ## App
 
