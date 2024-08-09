@@ -19,6 +19,8 @@ MolDecod is a decoder-only transformer model (GPT-like) using rotary positional 
 
 It was trained on ~2.7M molecules (~90M tokens), from the high-quality MOSES and ChEMBL datasets [[+]](https://tdcommons.ai/generation_tasks/molgen/), and achieves an impressive performance for its size.
 
+MolDecod comes with its custom tokenizer, a SentencePiece model trained on the same dataset.
+
 On 10,000 generated molecule for different levels of temperature, it obtains the following metrics:
 | Temperature | Validity | Uniqueness | Diversity | Novelty | KL Divergence | Fragment Similarity | Scaffold Diversity |
 |-------------|----------|------------|-----------|---------|---------------|---------------------|--------------------|
