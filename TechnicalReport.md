@@ -29,7 +29,7 @@ This project uses a custom SentencePiece tokenizer to process SMILES strings for
 
 ### Key features
 
-MolDecod is a decoder-only transformer model designed for molecular representation learning, with the following specifications:
+MolDecod is a decoder-only transformer model, with the following specifications:
 - Embedding Layer: Converts input tokens to 256-dimensional vectors.
 - Rotary Positional Encoding: Implements position-aware representations without additional parameters.
 - Transformer Decoder Blocks: Four identical layers, each containing:
