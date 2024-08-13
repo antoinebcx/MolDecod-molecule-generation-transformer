@@ -4,6 +4,10 @@ torchaudio
 scikit-learn
 sentencepiece
 rdkit-pypi
-# PyTDC
+PyTDC
+pandas
+numpy
 streamlit
 IPython
+matplotlib
+seaborn
