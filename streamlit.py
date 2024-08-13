@@ -85,7 +85,7 @@ if st.button('Generate'):
     # Calculate properties
     properties = calculate_properties(generated_molecule)
     if properties:
-        st.write('Molecular Properties:')
+        st.markdown('#### Molecular Properties')
         property_data = [[prop, value] for prop, value in properties.items()]
         property_df = pd.DataFrame(property_data, columns=['Property', 'Value'])
         st.table(property_df)
