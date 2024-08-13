@@ -41,6 +41,10 @@ You can generate molecules from a prompt and visualize their structure and prope
 
 &nbsp;
 
-<img width="742" alt="image" src="https://github.com/user-attachments/assets/8b6fec5b-fef4-4475-8358-8475dee558f1">
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/e5db416a-7a4f-4cb9-82d2-9a54f9eeacd7">
 
-<img width="742" alt="image" src="https://github.com/user-attachments/assets/bf5f396f-7618-4d56-aac1-56f444a8ef9a">
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/f0e8f5f8-377b-4486-bb7e-477e04298ae2">
+
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/9b3eefb7-55e7-439f-9e6c-5edc37db3de3">
+
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/11a69565-c817-46eb-bd29-a4816ebf427c">
