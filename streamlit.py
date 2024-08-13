@@ -63,7 +63,6 @@ with col2:
     temperature = st.slider('Temperature', min_value=0.01, max_value=1.0, value=0.5, step=0.1)
 
 if st.button('Generate Molecule'):
-    # Correctly handle start tokens
     start_seq = sp.encode(start_tokens)
     start_seq = torch.tensor(start_seq, device=device)
 
