@@ -5,7 +5,7 @@ MolDecod is a 5M-parameter decoder-only transformer using rotary positional enco
 ## Repository
 
 This repository contains:
-- MolDecod PyTorch dictionary and its tokenizer in `/models`
+- MolDecod .pth file and its tokenizer in `/models`
 - A `streamlit.py` app to interact with the model
 - A `TechnicalReport.md` for technical details
 - Notebooks to train, evaluate and use the model in `/notebooks`
