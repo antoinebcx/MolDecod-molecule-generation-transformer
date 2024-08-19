@@ -1,6 +1,6 @@
 # MolDecod: Transformer for molecule generation
 
-MolDecod is a 5M-parameter decoder-only transformer using rotary positional encoding, for SMILES molecule generation.
+MolDecod is a 5M-parameter decoder-only transformer for molecule generation (SMILES).
 
 ## Repository
 
