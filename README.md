@@ -5,11 +5,11 @@ MolDecod is a 5M-parameter decoder-only transformer for molecule generation (SMI
 ## Repository
 
 This repository contains:
-- MolDecod .pth file and its tokenizer in `/models`
-- a `streamlit.py` app to interact with the model
-- `TechnicalReport.md` for technical details
-- `/notebooks` to train, evaluate and use the model
-- some `/utils` functions
+- The trained MolDecod .pth file and SentencePiece tokenizer in `/models`
+- a Streamlit app to interact with the model in `streamlit.py`
+- a report with technical details in `TechnicalReport.md`
+- the notebooks to train, evaluate and use the model in `/notebooks`
+- some functions to use the model in different ways in `/utils`
 
 ## Model characteristics
 
